@@ -1,0 +1,16 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="scramble_models",
+    version="0.1.0",
+    description="Shared models and logic for Scramble App",
+    author="Your Name",
+    packages=find_packages(include=["models", "models.*"]),
+    install_requires=[
+        "pymongo",
+        "pydantic",
+        "boto3",
+        "bson",
+    ],
+    python_requires=">=3.8",
+)
