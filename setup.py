@@ -11,6 +11,9 @@ setup(
         "pydantic",
         "boto3",
         "bson",
+        "dotenv",
+        "bcrypt",
+        "email_validator"
     ],
     python_requires=">=3.8",
 )

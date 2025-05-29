@@ -9,6 +9,11 @@ pydantic = "*"
 pymongo = "*"
 boto3 = "*"
 setuptools = "*"
+pytz = "*"
+flask-mailman = "*"
+dotenv = "*"
+bcrypt = "*"
+email-validator = "*"
 
 [dev-packages]
 

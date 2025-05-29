@@ -2,13 +2,7 @@ from flask_mailman import EmailMessage
 from bson import ObjectId
 import pytz
 from datetime import datetime, timedelta
-
-# Add this line to ensure the correct path
-import sys
-import os
-sys.path.append(os.path.dirname(__file__))
-
-from models.utils.config import db
+from .config import db
 
 def send_email(subject: str, recipient: str, body_html: str):
     """Send an email."""
