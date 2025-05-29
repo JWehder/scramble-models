@@ -5,7 +5,7 @@ from pydantic import BaseModel
 # Adjust the paths for MacOS to get the flask_app directory
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from helper_methods import to_serializable
+from models.utils.helper_methods import to_serializable
 
 class Base(BaseModel):
 

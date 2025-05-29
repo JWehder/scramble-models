@@ -8,7 +8,7 @@ import sys
 import os
 sys.path.append(os.path.dirname(__file__))
 
-from config import db
+from models.utils.config import db
 
 def send_email(subject: str, recipient: str, body_html: str):
     """Send an email."""

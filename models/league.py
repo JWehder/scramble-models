@@ -13,8 +13,8 @@ import os
 # Adjust the paths for MacOS to get the server directory
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from models import PyObjectId
-from helper_methods import convert_utc_to_local, get_day_number, convert_to_datetime, get_closest_draft_date
-from config import db
+from models.utils.helper_methods import convert_utc_to_local, get_day_number, convert_to_datetime, get_closest_draft_date
+from models.utils.config import db
 from models.base_model import Base
 import string
 

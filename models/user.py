@@ -13,8 +13,8 @@ import string
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from models.base_model import Base
 from models import PyObjectId 
-from config import db
-from helper_methods import send_email
+from models.utils.config import db
+from models.utils.helper_methods import send_email
 
 class Request(Base):
     Status: Literal["approved", "pending", "declined"] = "pending"

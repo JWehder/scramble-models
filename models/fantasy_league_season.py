@@ -12,9 +12,9 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from models.base_model import Base
 from models import PyObjectId
-from config import db
+from models.utils.config import db
 
-from helper_methods import convert_to_datetime, get_closest_draft_date
+from models.utils.helper_methods import convert_to_datetime, get_closest_draft_date
 
 class FantasyLeagueSeason(Base):
     id: Optional[PyObjectId] = Field(alias='_id')
