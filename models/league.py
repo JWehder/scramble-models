@@ -12,10 +12,7 @@ import os
 from utils.helper_methods import convert_utc_to_local, get_day_number, get_closest_draft_date
 from utils.config import db
 
-# Adjust the paths for MacOS to get the server directory
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from models import PyObjectId
-
 from models.base_model import Base
 import string
 
@@ -734,6 +731,3 @@ class League(Base):
 
     class Config:
         populate_by_name = True
-
-if __name__ == "__main__":
-    League()
