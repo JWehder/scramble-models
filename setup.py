@@ -13,7 +13,8 @@ setup(
         "bson",
         "dotenv",
         "bcrypt",
-        "email_validator"
+        "email_validator",
+        "flask-mailman"
     ],
     python_requires=">=3.8",
 )
