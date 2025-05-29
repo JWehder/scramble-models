@@ -7,12 +7,12 @@ import re
 # Add this line to ensure the correct path
 import sys
 import os
-
+q
 # Adjust the paths for MacOS to get the server directory
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from models.base_model import Base
 from models import PyObjectId
-from config import db
+from models.utils.config import db
 
 class LeagueSettings(Base):
     id: Optional[PyObjectId] = Field(alias='_id')

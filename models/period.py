@@ -11,9 +11,9 @@ import os
 # Adjust the paths for MacOS to get the server directory
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from models.base_model import Base
-from helper_methods import convert_utc_to_local, get_day_number
+from models.helper_methods import convert_utc_to_local, get_day_number
 from models import PyObjectId
-from config import db
+from models.config import db
 
 TeamResult = Any
 
