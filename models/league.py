@@ -9,8 +9,8 @@ import random
 # Add this line to ensure the correct path
 import sys
 import os
-from utils.helper_methods import convert_utc_to_local, get_day_number, get_closest_draft_date
-from utils.config import db
+from .utils.helper_methods import convert_utc_to_local, get_day_number, get_closest_draft_date
+from .utils.config import db
 
 from models import PyObjectId
 from models.base_model import Base
