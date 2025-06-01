@@ -4,9 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-bson = "*"
 pydantic = "*"
-pymongo = "*"
 boto3 = "*"
 setuptools = "*"
 pytz = "*"
@@ -14,6 +12,7 @@ flask-mailman = "*"
 dotenv = "*"
 bcrypt = "*"
 email-validator = "*"
+pymongo = "*"
 
 [dev-packages]
 

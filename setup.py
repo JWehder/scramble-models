@@ -10,7 +10,6 @@ setup(
         "pymongo",
         "pydantic",
         "boto3",
-        "bson",
         "dotenv",
         "bcrypt",
         "email_validator",
