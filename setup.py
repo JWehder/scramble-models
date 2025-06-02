@@ -7,7 +7,7 @@ setup(
     author="Your Name",
     packages=find_packages(include=["models", "models.*"]),
     install_requires=[
-        "pymongo",
+        "pymongo==4.6.1",
         "pydantic",
         "boto3",
         "dotenv",
